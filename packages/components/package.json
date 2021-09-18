@@ -4,8 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng build --watch --configuration development",
+    "prebuild": "rm -Rf dist",
     "build": "ng build",
     "test": "ng test"
+  },
+  "publishConfig": {
+    "directory": "dist"
   },
   "private": true,
   "dependencies": {
