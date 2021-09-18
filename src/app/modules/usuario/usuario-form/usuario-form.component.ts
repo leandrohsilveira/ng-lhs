@@ -9,7 +9,8 @@ import {
 import { Subject } from "rxjs";
 import { distinctUntilChanged, map, takeUntil } from "rxjs/operators";
 import { IUsuarioFormValue, UsuarioFormGroup } from "../usuario-form";
-import { PapelSuggestionService } from "../papel";
+import { IPapelVisualizacao } from "../papel";
+import { ISuggestionService } from "../../components";
 
 @Component({
   selector: "app-usuario-form",
@@ -17,8 +18,6 @@ import { PapelSuggestionService } from "../papel";
   styleUrls: ["./usuario-form.component.css"]
 })
 export class UsuarioFormComponent implements OnInit, OnDestroy {
-  constructor(public papelSuggestionService: PapelSuggestionService) {}
-
   @Input()
   editar = false;
 
@@ -27,6 +26,9 @@ export class UsuarioFormComponent implements OnInit, OnDestroy {
 
   @Input()
   dados?: IUsuarioFormValue;
+
+  @Input()
+  papelSuggestion: ISuggestionService<IPapelVisualizacao>;
 
   @Output()
   dadosChange = new EventEmitter<IUsuarioFormValue>();

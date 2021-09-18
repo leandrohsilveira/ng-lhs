@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IUsuarioFormValue, IUsuarioVisualizar,  UsuarioFormService } from '../../../modules/usuario';
+import { IUsuarioFormValue, IUsuarioVisualizar,  PapelSuggestionService,  UsuarioFormService } from '../../../modules/usuario';
 
 @Component({
   templateUrl: './usuario-editar.component.html',
@@ -11,6 +11,7 @@ export class UsuarioEditarComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private formService: UsuarioFormService,
+    public papelSuggestion: PapelSuggestionService,
   ) {}
 
   valido = false;

@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { UsuarioFormModule } from "./usuario-form";
+import { UsuarioFormModule, UsuarioFormService } from "./usuario-form";
 import { UsuarioService } from "./usuario.service";
-import { PapelService } from "./papel";
+import { PapelService, PapelSuggestionService } from "./papel";
 
 @NgModule({
-  providers: [PapelService, UsuarioService],
+  providers: [PapelService, UsuarioService, UsuarioFormService, PapelSuggestionService],
   imports: [CommonModule, UsuarioFormModule],
   exports: [UsuarioFormModule]
 })

@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import {
   IUsuarioFormValue,
+  PapelSuggestionService,
   UsuarioFormService
 } from "../../../modules/usuario";
 
@@ -12,7 +13,8 @@ export class UsuarioIncluirComponent {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private formService: UsuarioFormService
+    private formService: UsuarioFormService,
+    public papelSuggestion: PapelSuggestionService,
   ) {}
 
   valido = false;
