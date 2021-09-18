@@ -19,10 +19,10 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "./tsconfig.lib.prod.json"
+              "tsConfig": "./src/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "./tsconfig.lib.json"
+              "tsConfig": "./src/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -31,7 +31,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "./src/test.ts",
-            "tsConfig": "./tsconfig.spec.json",
+            "tsConfig": "./src/tsconfig.spec.json",
             "karmaConfig": "./karma.conf.js"
           }
         }
