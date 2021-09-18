@@ -9,6 +9,10 @@
       "path": "app/example"
     },
     {
+      "name": "@app-modules/user",
+      "path": "modules/user"
+    },
+    {
       "name": "📦 @ngx-lhs/components",
       "path": "packages/components"
     }

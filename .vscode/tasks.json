@@ -37,6 +37,17 @@
     },
     {
       "type": "npm",
+      "script": "module:user:start",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "lerna: module: user: start",
+      "detail": "start watch build for module @app-modules/user",
+      "presentation": {
+        "group": "dev"
+      }
+    },
+    {
+      "type": "npm",
       "script": "app:example:start",
       "problemMatcher": [],
       "isBackground": true,

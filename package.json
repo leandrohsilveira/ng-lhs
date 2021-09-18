@@ -7,6 +7,8 @@
     "bootstrap": "lerna bootstrap",
     "lib:components:start": "cd packages/components && npm run start",
     "lib:components:build": "cd packages/components && npm run build",
+    "module:user:start": "cd modules/user && npm run start",
+    "module:user:build": "cd modules/user && npm run build",
     "app:example:start": "cd app/example && npm run start",
     "app:example:build": "cd app/example && npm run build"
   },
