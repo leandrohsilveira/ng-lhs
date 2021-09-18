@@ -13,7 +13,7 @@ import {IPapelVisualizacao} from '../papel'
 import {ISuggestionService} from '@ngx-lhs/components'
 
 @Component({
-  selector: 'app-usuario-form',
+  selector: 'am-usr-usuario-form',
   templateUrl: './usuario-form.component.html',
   styleUrls: ['./usuario-form.component.css'],
 })

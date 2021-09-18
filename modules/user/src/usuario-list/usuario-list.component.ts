@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core'
 import {IUsuarioListar} from '../usuario'
 
 @Component({
-  selector: 'app-usuario-list',
+  selector: 'am-usr-usuario-list',
   templateUrl: './usuario-list.component.html',
   styleUrls: ['./usuario-list.component.css'],
 })

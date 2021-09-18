@@ -4,7 +4,7 @@ import {
   IUsuarioFormValue,
   PapelSuggestionService,
   UsuarioFormService,
-} from '../../../modules/usuario'
+} from '@app-modules/user'
 
 @Component({
   templateUrl: './usuario-incluir.component.html',

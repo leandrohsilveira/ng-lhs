@@ -7,7 +7,7 @@ import {
   PageTitleModule,
   ListPaginatorModule,
 } from '@ngx-lhs/components'
-import {UsuarioListModule} from 'src/app/modules/usuario'
+import {UsuarioListModule} from '@app-modules/user'
 
 @NgModule({
   declarations: [UsuarioListarComponent],

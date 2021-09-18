@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core'
 import {RouterModule, Routes} from '@angular/router'
-import {IUsuarioVisualizar, UsuarioService} from '../../modules/usuario'
-import {UsuarioEditarComponent} from './usuario-editar/usuario-editar.component'
+import {UsuarioService} from '@app-modules/user'
+import {UsuarioEditarComponent} from './usuario-editar'
 import {UsuarioIncluirComponent} from './usuario-incluir'
 import {UsuarioListarComponent} from './usuario-listar'
 

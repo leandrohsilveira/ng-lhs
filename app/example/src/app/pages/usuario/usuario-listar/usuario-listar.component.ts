@@ -2,8 +2,7 @@ import {Component, OnInit} from '@angular/core'
 import {ActivatedRoute, Router} from '@angular/router'
 import {map, Observable, switchMap} from 'rxjs'
 import {ListRouterService} from '@ngx-lhs/components'
-import {IUsuarioListar, UsuarioService} from 'src/app/modules/usuario'
-import {Pageable} from 'src/app/modules/usuario/utils'
+import {IUsuarioListar, UsuarioService, Pageable} from '@app-modules/user'
 
 @Component({
   templateUrl: './usuario-listar.component.html',

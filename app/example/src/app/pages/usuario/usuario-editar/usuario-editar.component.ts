@@ -5,7 +5,7 @@ import {
   IUsuarioVisualizar,
   PapelSuggestionService,
   UsuarioFormService,
-} from '../../../modules/usuario'
+} from '@app-modules/user'
 
 @Component({
   templateUrl: './usuario-editar.component.html',

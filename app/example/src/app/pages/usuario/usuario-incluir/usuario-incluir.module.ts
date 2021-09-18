@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {UsuarioIncluirComponent} from './usuario-incluir.component'
-import {LibUsuarioModule} from '../../../modules/usuario'
+import {LibUsuarioModule} from '@app-modules/user'
 import {ComponentsModule} from '@ngx-lhs/components'
 import {RouterModule} from '@angular/router'
 

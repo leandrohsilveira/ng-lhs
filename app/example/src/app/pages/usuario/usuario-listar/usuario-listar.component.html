@@ -4,10 +4,10 @@
     Adicionar Usuário
   </lhs-button>
 </lhs-page-title>
-<app-usuario-list
+<am-usr-usuario-list
   [users]="users$ | async"
   (editar)="onEditarUsuarioClick($event)"
-></app-usuario-list>
+></am-usr-usuario-list>
 <lhs-list-paginator
   [(page)]="listRouter.page"
   [size]="listRouter.size"
