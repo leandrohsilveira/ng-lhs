@@ -40,7 +40,7 @@ export class BreadcrumbComponent implements OnInit {
     @Optional() private activatedRoute?: ActivatedRoute
   ) {}
 
-  private _items: TBreadcrumbItem[]
+  private _items: TBreadcrumbItem[] = []
 
   get items() {
     return this._items
@@ -76,7 +76,7 @@ export class BreadcrumbComponent implements OnInit {
 
   private convertRouteToBreadcrumbItem(route: ActivatedRoute): TBreadcrumbItem {
     const label = this.getBreadcrumbItemTitle(route)
-    if (route.snapshot === this.activatedRoute.snapshot) {
+    if (route.snapshot === this.activatedRoute?.snapshot) {
       return {
         label,
         kind: 'current',
