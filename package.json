@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
+    "lib:components:start": "cd packages/components && npm run start",
+    "lib:components:build": "cd packages/components && npm run build",
+    "app:example:start": "cd app/example && npm run start",
+    "app:example:build": "cd app/example && npm run build"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

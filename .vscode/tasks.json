@@ -19,11 +19,32 @@
     },
     {
       "type": "npm",
-      "script": "start",
+      "script": "bootstrap",
+      "problemMatcher": [],
+      "label": "lerna: bootstrap",
+      "detail": "bootstrap packages and install it's dependencies"
+    },
+    {
+      "type": "npm",
+      "script": "lib:components:start",
       "problemMatcher": [],
       "isBackground": true,
-      "label": "npm: start",
-      "detail": "start dev server"
+      "label": "lerna: lib: components: start",
+      "detail": "start watch build for library @ngx-lhs/components",
+      "presentation": {
+        "group": "dev"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "app:example:start",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: app: example: start",
+      "detail": "start dev server for app example",
+      "presentation": {
+        "group": "dev"
+      }
     }
   ]
 }
