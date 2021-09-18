@@ -1,15 +1,15 @@
 {
   "folders": [
     {
-      "name": "✨ ngx-lhs",
+      "name": "@ngx-lhs",
       "path": "."
     },
     {
-      "name": "🚀 example",
+      "name": "🚀 @app/example",
       "path": "app/example"
     },
     {
-      "name": "@app-modules/user",
+      "name": "🦸‍♂️ @app-modules/user",
       "path": "modules/user"
     },
     {
