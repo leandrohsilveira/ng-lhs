@@ -1,17 +1,33 @@
 {
-	"folders": [
-		{
-			"name": "✨ ngx-lhs",
-			"path": "."
-		},
-		{
-			"name": "🚀 example",
-			"path": "app/example"
-		},
-		{
-			"name": "📦 @ngx-lhs/components",
-			"path": "packages/components"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "✨ ngx-lhs",
+      "path": "."
+    },
+    {
+      "name": "🚀 example",
+      "path": "app/example"
+    },
+    {
+      "name": "📦 @ngx-lhs/components",
+      "path": "packages/components"
+    }
+  ],
+  "settings": {},
+  "extensions": {
+    "recommendations": [
+      "folke.vscode-monorepo-workspace",
+      "eamodio.gitlens",
+      "eg2.vscode-npm-script",
+      "esbenp.prettier-vscode",
+      "mikehanson.auto-barrel",
+      "editorconfig.editorconfig",
+      "humao.rest-client",
+      "gruntfuggly.todo-tree",
+      "q.typescript-mono-repo-import-helper",
+      "mike-co.import-sorter",
+      "ms-vscode.vscode-typescript-tslint-plugin",
+      "netcorext.uuid-generator"
+    ]
+  }
 }
