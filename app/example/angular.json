@@ -26,7 +26,12 @@
             "scripts": [],
             "optimization": false,
             "outputHashing": "none",
-            "sourceMap": true,
+            "sourceMap": {
+              "scripts": true,
+              "styles": true,
+              "vendor": true,
+              "hidden": false
+            },
             "extractCss": true,
             "namedChunks": true,
             "aot": true,
