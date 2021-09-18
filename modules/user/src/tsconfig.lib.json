@@ -10,6 +10,5 @@
     "types": [],
     "lib": ["dom", "es2018"]
   },
-  "exclude": ["test.ts", "**/*.spec.ts"],
-  "include": ["*.d.ts", "**/*.d.ts"]
+  "exclude": ["test.ts", "**/*.spec.ts"]
 }
