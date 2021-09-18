@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {UsuarioListComponent} from './usuario-list.component'
-import {ButtonModule, ListModule} from '../../components'
+import {ButtonModule, ListModule} from '@ngx-lhs/components'
 
 @NgModule({
   declarations: [UsuarioListComponent],

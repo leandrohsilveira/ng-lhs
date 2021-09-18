@@ -10,7 +10,7 @@ import {Subject} from 'rxjs'
 import {distinctUntilChanged, map, takeUntil} from 'rxjs/operators'
 import {IUsuarioFormValue, UsuarioFormGroup} from '../usuario-form'
 import {IPapelVisualizacao} from '../papel'
-import {ISuggestionService} from '../../components'
+import {ISuggestionService} from '@ngx-lhs/components'
 
 @Component({
   selector: 'app-usuario-form',

@@ -6,7 +6,7 @@ import {
   ButtonModule,
   PageTitleModule,
   ListPaginatorModule,
-} from 'src/app/modules/components'
+} from '@ngx-lhs/components'
 import {UsuarioListModule} from 'src/app/modules/usuario'
 
 @NgModule({

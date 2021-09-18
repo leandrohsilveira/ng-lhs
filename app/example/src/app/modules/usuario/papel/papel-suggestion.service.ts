@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core'
 import {PapelService} from '.'
-import {ISuggestionService} from '../../components'
+import {ISuggestionService} from '@ngx-lhs/components'
 import {IPapelVisualizacao} from './papel'
 
 @Injectable()

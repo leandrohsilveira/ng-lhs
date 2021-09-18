@@ -1,4 +1,4 @@
-import {IFieldSuggestionI18nService} from '../modules/components'
+import {IFieldSuggestionI18nService} from '@ngx-lhs/components'
 
 export class AppFieldSuggestionI18nService
   implements IFieldSuggestionI18nService

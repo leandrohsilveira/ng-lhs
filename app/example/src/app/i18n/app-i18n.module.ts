@@ -3,7 +3,7 @@ import {CommonModule, DatePipe} from '@angular/common'
 import {
   FIELD_I18N_SERVICE,
   FIELD_SUGGESTION_I18N_SERVICE,
-} from '../modules/components'
+} from '@ngx-lhs/components'
 import {AppFieldI18nService} from './app-field-i18n.service'
 import {AppFieldSuggestionI18nService} from './app-field-suggestion-i18n.service'
 import {DateOnlyPipe} from './date-only.pipe'

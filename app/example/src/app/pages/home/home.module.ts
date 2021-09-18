@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {HomeComponent} from './home.component'
 import {HomeRoutingModule} from './home-routing.module'
-import {ComponentsModule} from '../../modules/components'
+import {ComponentsModule} from '@ngx-lhs/components'
 import {AppI18nModule} from '../../i18n'
 
 @NgModule({

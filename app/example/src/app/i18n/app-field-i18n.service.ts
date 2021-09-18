@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core'
-import {IFieldI18nService} from '../modules/components'
+import {IFieldI18nService} from '@ngx-lhs/components'
 
 @Injectable()
 export class AppFieldI18nService implements IFieldI18nService {
