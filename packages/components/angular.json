@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "components": {
+    "@ngx-lhs/components": {
       "projectType": "library",
       "root": ".",
       "sourceRoot": "src",
@@ -38,5 +38,5 @@
       }
     }
   },
-  "defaultProject": "components"
+  "defaultProject": "@ngx-lhs/components"
 }
