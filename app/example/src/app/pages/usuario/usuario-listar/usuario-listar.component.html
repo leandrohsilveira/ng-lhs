@@ -1,15 +1,15 @@
-<app-breadcrumb></app-breadcrumb>
-<app-page-title>
-  <app-button kind="outline" (click)="onAdicionarUsuarioClick()">
+<lhs-breadcrumb></lhs-breadcrumb>
+<lhs-page-title>
+  <lhs-button kind="outline" (click)="onAdicionarUsuarioClick()">
     Adicionar Usuário
-  </app-button>
-</app-page-title>
+  </lhs-button>
+</lhs-page-title>
 <app-usuario-list
   [users]="users$ | async"
   (editar)="onEditarUsuarioClick($event)"
 ></app-usuario-list>
-<app-list-paginator
+<lhs-list-paginator
   [(page)]="listRouter.page"
   [size]="listRouter.size"
   [maxPages]="listRouter.maxPages"
-></app-list-paginator>
+></lhs-list-paginator>

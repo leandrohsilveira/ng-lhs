@@ -1,16 +1,16 @@
-<app-list [items]="users">
+<lhs-list [items]="users">
   <ng-template let-user>
-    <app-list-item [title]="user.nome">
+    <lhs-list-item [title]="user.nome">
       <small>{{ user.email }}</small>
       |
       <small>{{ user.username }}</small>
-      <app-button
+      <lhs-button
         *ngIf="editar.observed"
         kind="link"
         (click)="onEditarClick(user)"
       >
         Editar
-      </app-button>
-    </app-list-item>
+      </lhs-button>
+    </lhs-list-item>
   </ng-template>
-</app-list>
+</lhs-list>

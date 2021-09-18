@@ -1,10 +1,10 @@
-<app-breadcrumb></app-breadcrumb>
-<app-page-title>
-  <app-button color="primary" [disabled]="!valido" (click)="onAtualizarClick()">
+<lhs-breadcrumb></lhs-breadcrumb>
+<lhs-page-title>
+  <lhs-button color="primary" [disabled]="!valido" (click)="onAtualizarClick()">
     Atualizar
-  </app-button>
-  <app-button kind="outline" (click)="onCancelarClick()">Cancelar</app-button>
-</app-page-title>
+  </lhs-button>
+  <lhs-button kind="outline" (click)="onCancelarClick()">Cancelar</lhs-button>
+</lhs-page-title>
 <app-usuario-form
   [editar]="true"
   [(dados)]="dados"
