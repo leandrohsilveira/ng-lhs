@@ -1,0 +1,47 @@
+<div
+  #ref
+  [class]="fieldCssClass"
+  (keydown.arrowdown)="onArrowDownKeydown($event)"
+  (keydown.arrowup)="onArrayUpKeydown($event)"
+  (keydown.enter)="onEnterKeydown($event)"
+>
+  <label *ngIf="label && name" [for]="name">{{ label }}</label>
+  <ng-content></ng-content>
+  <ng-container *ngIf="isI18nServiceProvided">
+    <lhs-validation-error
+      *ngIf="shouldDisplayError && errors?.required"
+      error="required"
+    >
+      {{ requiredErrorMessage }}
+    </lhs-validation-error>
+    <lhs-validation-error
+      *ngIf="shouldDisplayError && errors?.minlength"
+      error="minlength"
+    >
+      {{ minLengthErrorMessage }}
+    </lhs-validation-error>
+    <lhs-validation-error
+      *ngIf="shouldDisplayError && errors?.maxlength"
+      error="maxlength"
+    >
+      {{ maxLengthErrorMessage }}
+    </lhs-validation-error>
+    <lhs-validation-error *ngIf="shouldDisplayError && errors?.min" error="min">
+      {{ minNumberErrorMessage }}
+    </lhs-validation-error>
+    <lhs-validation-error *ngIf="shouldDisplayError && errors?.max" error="max">
+      {{ maxNumberErrorMessage }}
+    </lhs-validation-error>
+    <lhs-validation-error
+      *ngIf="shouldDisplayError && errors?.email"
+      error="email"
+    >
+      {{ emailErrorMessage }}
+    </lhs-validation-error>
+    <ng-container *ngFor="let error of customValidationErrors">
+      <lhs-validation-error *ngIf="shouldDisplayError" [error]="error.error">
+        {{ error.message }}
+      </lhs-validation-error>
+    </ng-container>
+  </ng-container>
+</div>

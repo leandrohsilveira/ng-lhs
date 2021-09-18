@@ -1,0 +1,15 @@
+<div class="breadcrumb" *ngIf="items$ | async as _items">
+  <div class="breadcrumb-item" *ngFor="let item of _items">
+    <lhs-button
+      *ngIf="!item.current; else current"
+      kind="link"
+      color="primary"
+      (click)="item.onClick()"
+    >
+      {{ item.label }}
+    </lhs-button>
+    <ng-template #current>
+      <div class="current">{{ item.label }}</div>
+    </ng-template>
+  </div>
+</div>

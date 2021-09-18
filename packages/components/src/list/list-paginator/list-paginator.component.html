@@ -1,0 +1,16 @@
+<lhs-button
+  kind="link"
+  class="page-button"
+  [disabled]="!hasPreviousPage"
+  (click)="previousPage()"
+>
+  Previous
+</lhs-button>
+<lhs-button
+  kind="link"
+  class="page-button"
+  [disabled]="!hasNextPage"
+  (click)="nextPage()"
+>
+  Next
+</lhs-button>

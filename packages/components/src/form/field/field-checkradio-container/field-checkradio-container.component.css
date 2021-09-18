@@ -1,0 +1,34 @@
+.field-checkradio-container {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: var(--el-primary-border-weight) solid var(--el-primary);
+  color: var(--el-primary);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.field-checkradio-container ::ng-deep > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.field-checkradio-container ::ng-deep > div > input[type='radio'],
+.field-checkradio-container ::ng-deep > input[type='radio'] {
+  margin: 0 5px;
+}
+
+.field-checkradio-container.field-checkradio-container-display-errors-on-touched.field-checkradio-container-touched.field-checkradio-container-invalid,
+.field-checkradio-container.field-checkradio-container-display-errors-on-touched.field-checkradio-container-touched.field-checkradio-container-invalid,
+.field-checkradio-container.field-checkradio-container-display-errors-on-dirty.field-checkradio-container-dirty.field-checkradio-container-invalid,
+.field-checkradio-container.field-checkradio-container-display-errors-on-dirty.field-checkradio-container-dirty.field-checkradio-container-invalid,
+.field-checkradio-container.field-checkradio-container-display-errors-on-always.field-checkradio-container-invalid,
+.field-checkradio-container.field-checkradio-container-display-errors-on-always.field-checkradio-container-invalid {
+  border-color: red;
+  color: red;
+}
