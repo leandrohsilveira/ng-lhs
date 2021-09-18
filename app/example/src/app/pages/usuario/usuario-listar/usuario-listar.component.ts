@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core'
 import {ActivatedRoute, Router} from '@angular/router'
 import {map, Observable, switchMap} from 'rxjs'
-import {ListRouterService} from 'src/app/modules/components/list'
+import {ListRouterService} from '@ngx-lhs/components'
 import {IUsuarioListar, UsuarioService} from 'src/app/modules/usuario'
 import {Pageable} from 'src/app/modules/usuario/utils'
 
