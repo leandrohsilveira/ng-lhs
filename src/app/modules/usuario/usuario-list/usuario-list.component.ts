@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IUsuarioListar } from '../usuario';
+import {Component, EventEmitter, Input, Output} from '@angular/core'
+import {IUsuarioListar} from '../usuario'
 
 @Component({
   selector: 'app-usuario-list',
@@ -7,15 +7,13 @@ import { IUsuarioListar } from '../usuario';
   styleUrls: ['./usuario-list.component.css'],
 })
 export class UsuarioListComponent {
-
   @Input()
-  users: IUsuarioListar[];
+  users: IUsuarioListar[]
 
   @Output()
-  editar = new EventEmitter<IUsuarioListar>();
+  editar = new EventEmitter<IUsuarioListar>()
 
   onEditarClick(editar: IUsuarioListar) {
-    this.editar.emit(editar);
+    this.editar.emit(editar)
   }
-
 }

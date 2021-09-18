@@ -1,5 +1,5 @@
 declare module 'simple-uuid' {
-    function uuid(): string;
+  function uuid(): string
 
-    export default uuid;
+  export default uuid
 }

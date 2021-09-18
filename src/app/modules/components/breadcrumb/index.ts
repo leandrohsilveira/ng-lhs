@@ -1,3 +1,3 @@
-export * from './breadcrumb.module';
-export * from './breadcrumb.component';
-export * from './breadcrumb';
+export * from './breadcrumb.module'
+export * from './breadcrumb.component'
+export * from './breadcrumb'

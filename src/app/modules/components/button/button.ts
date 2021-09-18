@@ -1,6 +1,5 @@
+export type ButtonColor = 'primary' | 'default' | 'alternative'
 
-export type ButtonColor = 'primary' | 'default' | 'alternative';
+export type ButtonStyle = 'button' | 'outline' | 'link'
 
-export type ButtonStyle = 'button' | 'outline' | 'link';
-
-export type ButtonType = 'button' | 'submit';
+export type ButtonType = 'button' | 'submit'

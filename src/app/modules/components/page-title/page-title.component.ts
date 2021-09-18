@@ -1,24 +1,20 @@
-import { Component, Input, OnInit,  Optional } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {Component, Input, OnInit, Optional} from '@angular/core'
+import {ActivatedRoute} from '@angular/router'
 
 @Component({
   selector: 'app-page-title',
   templateUrl: './page-title.component.html',
-  styleUrls: ['./page-title.component.css']
+  styleUrls: ['./page-title.component.css'],
 })
 export class PageTitleComponent implements OnInit {
-
-  constructor(
-    @Optional() private activatedRoute: ActivatedRoute,
-  ) {}
+  constructor(@Optional() private activatedRoute: ActivatedRoute) {}
 
   @Input()
-  text: string;
+  text: string
 
   ngOnInit() {
     if (!this.text) {
       this.text = this.activatedRoute?.snapshot.data.title
     }
   }
-
 }

@@ -1,2 +1,2 @@
-export * from './usuario-list.component';
-export * from './usuario-list.module';
+export * from './usuario-list.component'
+export * from './usuario-list.module'

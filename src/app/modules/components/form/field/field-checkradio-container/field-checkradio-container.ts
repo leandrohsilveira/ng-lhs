@@ -1,1 +1,1 @@
-export type CheckRadioDirection = "HORIZONTAL" | "VERTICAL";
+export type CheckRadioDirection = 'HORIZONTAL' | 'VERTICAL'

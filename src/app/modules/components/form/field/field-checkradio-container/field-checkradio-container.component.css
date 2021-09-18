@@ -18,8 +18,8 @@
   flex-wrap: wrap;
 }
 
-.field-checkradio-container ::ng-deep > div > input[type=radio],
-.field-checkradio-container ::ng-deep > input[type=radio] {
+.field-checkradio-container ::ng-deep > div > input[type='radio'],
+.field-checkradio-container ::ng-deep > input[type='radio'] {
   margin: 0 5px;
 }
 

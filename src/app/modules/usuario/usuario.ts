@@ -1,28 +1,35 @@
-import { IPapelVisualizacao } from "./papel";
+import {IPapelVisualizacao} from './papel'
 
-export type Genero = "MASCULINO" | "FEMININO";
+export type Genero = 'MASCULINO' | 'FEMININO'
 
 interface IUsuario {
-  id: string;
-  nome?: string;
-  genero?: Genero;
-  email: string;
-  username: string;
-  senha: string;
-  papeis: string[];
+  id: string
+  nome?: string
+  genero?: Genero
+  email: string
+  username: string
+  senha: string
+  papeis: string[]
 }
 
-export interface IUsuarioIncluir extends Pick<IUsuario, 'nome' | 'genero' | 'email' | 'username' | 'senha' | 'papeis'> {
-  termosDeUsoAceito: boolean;
+export interface IUsuarioIncluir
+  extends Pick<
+    IUsuario,
+    'nome' | 'genero' | 'email' | 'username' | 'senha' | 'papeis'
+  > {
+  termosDeUsoAceito: boolean
 }
 
-export interface IUsuarioEditar extends Pick<IUsuario, 'id' | 'nome' | 'genero' | 'email' | 'papeis'> {}
+export interface IUsuarioEditar
+  extends Pick<IUsuario, 'id' | 'nome' | 'genero' | 'email' | 'papeis'> {}
 
-export interface IUsuarioVisualizar extends Pick<IUsuario, 'id' | 'nome' | 'genero' | 'email' | 'username'> {
-  papeis: IPapelVisualizacao[];
+export interface IUsuarioVisualizar
+  extends Pick<IUsuario, 'id' | 'nome' | 'genero' | 'email' | 'username'> {
+  papeis: IPapelVisualizacao[]
 }
 
-export interface IUsuarioListar extends Pick<IUsuario, 'id' | 'nome' | 'email' | 'username'> {}
+export interface IUsuarioListar
+  extends Pick<IUsuario, 'id' | 'nome' | 'email' | 'username'> {}
 
 export const USUARIOS: IUsuario[] = [
   {
@@ -41,4 +48,4 @@ export const USUARIOS: IUsuario[] = [
     senha: '123456',
     papeis: ['usuario'],
   },
-];
+]

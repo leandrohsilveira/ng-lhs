@@ -1,4 +1,4 @@
-import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
+import {Component, ContentChild, Input, TemplateRef} from '@angular/core'
 
 @Component({
   selector: 'app-list-item',
@@ -6,14 +6,12 @@ import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
   styleUrls: ['./list-item.component.css'],
 })
 export class ListItemComponent {
+  @Input()
+  title?: unknown
 
   @Input()
-  title?: unknown;
-
-  @Input()
-  description?: unknown;
+  description?: unknown
 
   @ContentChild(TemplateRef)
-  child: TemplateRef<any>;
-
+  child: TemplateRef<any>
 }

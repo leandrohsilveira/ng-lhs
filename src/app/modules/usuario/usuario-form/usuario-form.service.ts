@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
-import { tap } from "rxjs/operators";
-import { IUsuarioFormValue } from "./usuario-form";
-import { UsuarioService } from "../usuario.service";
-import { IUsuarioVisualizar } from "../usuario";
+import {Injectable} from '@angular/core'
+import {tap} from 'rxjs/operators'
+import {IUsuarioFormValue} from './usuario-form'
+import {UsuarioService} from '../usuario.service'
+import {IUsuarioVisualizar} from '../usuario'
 
 @Injectable()
 export class UsuarioFormService {
@@ -17,9 +17,9 @@ export class UsuarioFormService {
         username: dados.username,
         senha: dados.senha,
         termosDeUsoAceito: dados.termosDeUsoAceito,
-        papeis: dados.papeis.map(({ papel }) => papel.chave),
+        papeis: dados.papeis.map(({papel}) => papel.chave),
       })
-      .pipe(tap(() => alert("Usuario cadastrado com sucesso")));
+      .pipe(tap(() => alert('Usuario cadastrado com sucesso')))
   }
 
   editar(dados: IUsuarioFormValue) {
@@ -29,9 +29,9 @@ export class UsuarioFormService {
         nome: dados.nome,
         genero: dados.genero,
         email: dados.email,
-        papeis: dados.papeis.map(({ papel }) => papel.chave),
+        papeis: dados.papeis.map(({papel}) => papel.chave),
       })
-      .pipe(tap(() => alert("Usuario atualizado com sucesso")));
+      .pipe(tap(() => alert('Usuario atualizado com sucesso')))
   }
 
   visualizar(dados: IUsuarioVisualizar): IUsuarioFormValue {
@@ -46,7 +46,6 @@ export class UsuarioFormService {
         papel,
       })),
       senha: null,
-    };
+    }
   }
-
 }

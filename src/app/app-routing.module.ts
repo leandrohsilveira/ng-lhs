@@ -1,35 +1,35 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import {NgModule} from '@angular/core'
+import {RouterModule, Routes} from '@angular/router'
 
 function lazy<T>(importer: () => Promise<T>, mod: keyof T) {
-  return () => importer().then(ref => ref[mod]);
+  return () => importer().then((ref) => ref[mod])
 }
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     children: [
       {
-        path: "usuarios",
-        loadChildren: lazy(() => import("./pages/usuario"), "UsuarioModule"),
+        path: 'usuarios',
+        loadChildren: lazy(() => import('./pages/usuario'), 'UsuarioModule'),
         data: {
-          title: "Usuários cadastrados",
-          breadcrumb: "Usuários",
-        }
+          title: 'Usuários cadastrados',
+          breadcrumb: 'Usuários',
+        },
       },
       {
-        path: "",
-        loadChildren: lazy(() => import("./pages/home"), "HomeModule"),
-      }
+        path: '',
+        loadChildren: lazy(() => import('./pages/home'), 'HomeModule'),
+      },
     ],
     data: {
-      breadcrumb: "Início"
-    }
-  }
-];
+      breadcrumb: 'Início',
+    },
+  },
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

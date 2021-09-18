@@ -1,29 +1,29 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "shell",
-			"command": "rm",
-			"args": ["-Rf", "node_modules"],
-			"label": "npm: rm:node_modules",
-			"detail": "remove dependencies folder (node_modules)"
-		},
-		{
-			"type": "npm",
-			"script": "install",
-			"problemMatcher": [],
-			"label": "npm: install",
-			"detail": "install dependencies from package",
-			"dependsOn": ["npm: rm:node_modules"],
-			"dependsOrder": "sequence"
-		},
-		{
-			"type": "npm",
-			"script": "start",
-			"problemMatcher": [],
-			"isBackground": true,
-			"label": "npm: start",
-			"detail": "start dev server"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "rm",
+      "args": ["-Rf", "node_modules"],
+      "label": "npm: rm:node_modules",
+      "detail": "remove dependencies folder (node_modules)"
+    },
+    {
+      "type": "npm",
+      "script": "install",
+      "problemMatcher": [],
+      "label": "npm: install",
+      "detail": "install dependencies from package",
+      "dependsOn": ["npm: rm:node_modules"],
+      "dependsOrder": "sequence"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: start",
+      "detail": "start dev server"
+    }
+  ]
 }

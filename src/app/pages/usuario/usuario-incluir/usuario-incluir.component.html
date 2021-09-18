@@ -1,18 +1,9 @@
 <app-breadcrumb></app-breadcrumb>
 <app-page-title>
-  <app-button 
-    color="primary"
-    [disabled]="!valido" 
-    (click)="onCadastrarClick()"
-  >
+  <app-button color="primary" [disabled]="!valido" (click)="onCadastrarClick()">
     Cadastrar
   </app-button>
-  <app-button
-    kind="outline"
-    (click)="onCancelarClick()"
-  >
-    Cancelar
-  </app-button>
+  <app-button kind="outline" (click)="onCancelarClick()">Cancelar</app-button>
 </app-page-title>
 <app-usuario-form
   [(dados)]="dados"

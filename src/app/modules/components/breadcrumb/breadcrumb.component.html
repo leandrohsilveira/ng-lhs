@@ -1,6 +1,6 @@
 <div class="breadcrumb" *ngIf="items$ | async as _items">
   <div class="breadcrumb-item" *ngFor="let item of _items">
-    <app-button 
+    <app-button
       *ngIf="!item.current; else current"
       kind="link"
       color="primary"

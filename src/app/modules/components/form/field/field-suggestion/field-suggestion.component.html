@@ -1,9 +1,12 @@
 <ng-container *ngIf="open">
-  <div class="field-suggestion-container" *ngIf="suggestions && hasMinSearchLength">
-    <div 
+  <div
+    class="field-suggestion-container"
+    *ngIf="suggestions && hasMinSearchLength"
+  >
+    <div
       *ngFor="let suggestion of suggestions; let index = index"
       [ngClass]="{
-        'field-suggestion-item': true, 
+        'field-suggestion-item': true,
         'field-suggestion-selected': cursorSuggestionIndex === index
       }"
       (click)="onClick(index)"

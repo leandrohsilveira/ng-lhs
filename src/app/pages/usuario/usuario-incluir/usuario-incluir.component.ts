@@ -1,41 +1,41 @@
-import { Component } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
+import {Component} from '@angular/core'
+import {ActivatedRoute, Router} from '@angular/router'
 import {
   IUsuarioFormValue,
   PapelSuggestionService,
-  UsuarioFormService
-} from "../../../modules/usuario";
+  UsuarioFormService,
+} from '../../../modules/usuario'
 
 @Component({
-  templateUrl: "./usuario-incluir.component.html"
+  templateUrl: './usuario-incluir.component.html',
 })
 export class UsuarioIncluirComponent {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private formService: UsuarioFormService,
-    public papelSuggestion: PapelSuggestionService,
+    public papelSuggestion: PapelSuggestionService
   ) {}
 
-  valido = false;
+  valido = false
 
-  dados: IUsuarioFormValue;
+  dados: IUsuarioFormValue
 
   onCadastrarClick() {
     this.formService
       .incluir(this.dados)
-      .subscribe({ next: this.onSucessoCadastro.bind(this) });
+      .subscribe({next: this.onSucessoCadastro.bind(this)})
   }
 
   onCancelarClick() {
-    this.voltar();
+    this.voltar()
   }
 
   onSucessoCadastro() {
-    this.voltar();
+    this.voltar()
   }
 
   private voltar() {
-    this.router.navigate(["../"], { relativeTo: this.activatedRoute });
+    this.router.navigate(['../'], {relativeTo: this.activatedRoute})
   }
 }

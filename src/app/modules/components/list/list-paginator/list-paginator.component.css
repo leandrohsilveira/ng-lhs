@@ -1,7 +1,7 @@
 :host {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 :host > .page-button ::ng-deep {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }

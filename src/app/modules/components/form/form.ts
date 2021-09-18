@@ -1,1 +1,1 @@
-export type FormValidationErrorDisplay = "always" | "dirty" | "touched";
+export type FormValidationErrorDisplay = 'always' | 'dirty' | 'touched'

@@ -77,8 +77,8 @@
   --bg: var(--primary-25);
   --font: var(--primary-3);
   --font-base-size: 14px;
-  --font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   --el-primary: var(--primary-8);
   --el-primary-hover: var(--primary-10);

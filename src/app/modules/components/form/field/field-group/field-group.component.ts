@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core'
 
 @Component({
   selector: 'app-field-group',
   templateUrl: './field-group.component.html',
-  styleUrls: ['./field-group.component.css']
+  styleUrls: ['./field-group.component.css'],
 })
-export class FieldGroupComponent {
-
-}
+export class FieldGroupComponent {}

@@ -1,4 +1,3 @@
-
 export const PAPEIS: IPapelVisualizacao[] = [
   {
     chave: 'usuario',
@@ -6,11 +5,11 @@ export const PAPEIS: IPapelVisualizacao[] = [
   },
   {
     chave: 'admin',
-    descricao: 'Administrador'
+    descricao: 'Administrador',
   },
 ]
 
 export interface IPapelVisualizacao {
-  chave: string;
-  descricao: string;
+  chave: string
+  descricao: string
 }

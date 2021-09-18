@@ -1,30 +1,28 @@
-import { Component, EventEmitter,  Input, Output } from '@angular/core';
-import { ButtonStyle, ButtonColor } from './button';
+import {Component, EventEmitter, Input, Output} from '@angular/core'
+import {ButtonStyle, ButtonColor} from './button'
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent {
+  @Input()
+  color: ButtonColor = 'default'
 
   @Input()
-  color: ButtonColor = "default"
+  kind: ButtonStyle = 'button'
 
   @Input()
-  kind: ButtonStyle = "button";
+  type: 'button' | 'submit' = 'button'
 
   @Input()
-  type: "button" | "submit" = "button";
-
-  @Input()
-  disabled = false;
+  disabled = false
 
   @Output()
-  click = new EventEmitter();
+  click = new EventEmitter()
 
   get cssClass() {
-    return `${this.kind} ${this.color}`;
+    return `${this.kind} ${this.color}`
   }
-
 }

@@ -14,7 +14,7 @@
   border: var(--el-primary-border-weight) solid var(--el-primary);
 }
 
-.field ::ng-deep input:not([type=radio]):not([type=checkbox]) {
+.field ::ng-deep input:not([type='radio']):not([type='checkbox']) {
   width: 100%;
   padding: 10px 15px;
   margin: 5px 0;
@@ -39,10 +39,16 @@
   color: red;
 }
 
-.field.field-display-errors-on-touched.field-touched.field-invalid ::ng-deep input,
-.field.field-display-errors-on-touched.field-touched.field-invalid ::ng-deep input:focus,
+.field.field-display-errors-on-touched.field-touched.field-invalid
+  ::ng-deep
+  input,
+.field.field-display-errors-on-touched.field-touched.field-invalid
+  ::ng-deep
+  input:focus,
 .field.field-display-errors-on-dirty.field-dirty.field-invalid ::ng-deep input,
-.field.field-display-errors-on-dirty.field-dirty.field-invalid ::ng-deep input:focus,
+.field.field-display-errors-on-dirty.field-dirty.field-invalid
+  ::ng-deep
+  input:focus,
 .field.field-display-errors-on-always.field-invalid ::ng-deep input,
 .field.field-display-errors-on-always.field-invalid ::ng-deep input:focus {
   border-color: red;

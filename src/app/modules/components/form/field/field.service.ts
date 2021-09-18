@@ -1,27 +1,25 @@
-import { Injectable } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { FieldValidationErrorDisplay, IFieldKeyEvent } from './field';
+import {Injectable} from '@angular/core'
+import {FormControl} from '@angular/forms'
+import {Observable} from 'rxjs'
+import {FieldValidationErrorDisplay, IFieldKeyEvent} from './field'
 
 @Injectable()
 export class FieldService {
+  constructor() {}
 
-  constructor() { }
+  name: string
 
-  name: string;
+  valueControlName?: string
 
-  valueControlName?: string;
+  displayErrorsOn: FieldValidationErrorDisplay = 'dirty'
 
-  displayErrorsOn: FieldValidationErrorDisplay = 'dirty';
+  keydown$: Observable<IFieldKeyEvent>
 
-  keydown$: Observable<IFieldKeyEvent>;
+  focus$: Observable<void>
 
-  focus$: Observable<void>;
+  blur$: Observable<void>
 
-  blur$: Observable<void>;
+  ngAfterViewInit$: Observable<HTMLInputElement[]>
 
-  ngAfterViewInit$: Observable<HTMLInputElement[]>;
-
-  control: FormControl;
-
+  control: FormControl
 }
