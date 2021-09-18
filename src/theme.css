@@ -1,0 +1,132 @@
+:root {
+  --primary-1: #0c0014;
+  --primary-2: #180029;
+  --primary-3: #24003d;
+  --primary-4: #300052;
+  --primary-5: #3b0066;
+  --primary-6: #47007a;
+  --primary-7: #53008f;
+  --primary-8: #5f00a3;
+  --primary-9: #6b00b8;
+  --primary-10: #7700cc;
+  --primary-11: #8300e0;
+  --primary-12: #8f00f5;
+  --primary-13: #990aff;
+  --primary-15: #a11fff;
+  --primary-16: #aa33ff;
+  --primary-17: #b247ff;
+  --primary-18: #bb5cff;
+  --primary-19: #c370ff;
+  --primary-20: #cc85ff;
+  --primary-21: #d499ff;
+  --primary-22: #ddadff;
+  --primary-23: #e5c2ff;
+  --primary-24: #edd6ff;
+  --primary-25: #f6ebff;
+
+  --default-1: #140014;
+  --default-2: #290029;
+  --default-3: #3d003d;
+  --default-4: #520052;
+  --default-5: #660066;
+  --default-6: #750075;
+  --default-7: #8f008f;
+  --default-8: #a300a3;
+  --default-9: #b800b8;
+  --default-10: #cc00cc;
+  --default-11: #e000e0;
+  --default-12: #f500f5;
+  --default-13: #ff0aff;
+  --default-15: #ff1fff;
+  --default-16: #ff33ff;
+  --default-17: #ff47ff;
+  --default-18: #ff5cff;
+  --default-19: #ff70ff;
+  --default-20: #ff85ff;
+  --default-21: #ff99ff;
+  --default-22: #ffadff;
+  --default-23: #ffc2ff;
+  --default-24: #ffd6ff;
+  --default-25: #ffebff;
+
+  --alternative-1: #140005;
+  --alternative-2: #29000a;
+  --alternative-3: #3d000e;
+  --alternative-4: #520013;
+  --alternative-5: #660018;
+  --alternative-6: #78001c;
+  --alternative-7: #8f0021;
+  --alternative-8: #a30026;
+  --alternative-9: #b8002b;
+  --alternative-10: #cc0030;
+  --alternative-11: #e00034;
+  --alternative-12: #f50039;
+  --alternative-13: #ff0a43;
+  --alternative-15: #ff1f53;
+  --alternative-16: #ff3363;
+  --alternative-17: #ff4772;
+  --alternative-18: #ff5c82;
+  --alternative-19: #ff7092;
+  --alternative-20: #ff85a1;
+  --alternative-21: #ff99b1;
+  --alternative-22: #ffadc0;
+  --alternative-23: #ffc2d0;
+  --alternative-24: #ffd6e0;
+  --alternative-25: #ffebef;
+
+  --bg: var(--primary-25);
+  --font: var(--primary-3);
+  --font-base-size: 14px;
+  --font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --el-primary: var(--primary-8);
+  --el-primary-hover: var(--primary-10);
+  --el-primary-font: var(--primary-24);
+  --el-primary-font-hover: var(--primary-24);
+  --el-primary-font-disabled: var(--primary-19);
+  --el-primary-border-weight: 1px;
+  --el-primary-border: var(--primary-9);
+  --el-primary-border-hover: var(--primary-10);
+  --el-primary-opacity: 0.4;
+
+  --el-default: var(--default-8);
+  --el-default-hover: var(--default-10);
+  --el-default-font: var(--default-24);
+  --el-default-font-hover: var(--default-24);
+  --el-default-font-disabled: var(--default-19);
+  --el-default-border-weight: 1px;
+  --el-default-border: var(--default-9);
+  --el-default-border-hover: var(--default-10);
+  --el-default-opacity: 0.4;
+
+  --el-alternative: var(--alternative-8);
+  --el-alternative-hover: var(--alternative-10);
+  --el-alternative-font: var(--alternative-24);
+  --el-alternative-font-hover: var(--alternative-24);
+  --el-alternative-font-disabled: var(--alternative-19);
+  --el-alternative-border-weight: 1px;
+  --el-alternative-border: var(--alternative-9);
+  --el-alternative-border-hover: var(--alternative-10);
+  --el-alternative-opacity: 0.4;
+
+  --container-bg: white;
+  --container-font-title: var(--font);
+  --container-font-description: var(--primary-21);
+  --container-border: 1px solid var(--primary-23);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  font-size: var(--font-base-size);
+  color: var(--font);
+  background-color: var(--bg);
+}
+
+input {
+  font-size: 1em;
+}

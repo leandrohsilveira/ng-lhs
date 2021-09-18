@@ -1,0 +1,10 @@
+.validation-error {
+  text-align: end;
+  font-size: 0.9em;
+  margin: 0 5px 0 5px;
+  color: red;
+}
+
+.validation-error:not(:first-child) {
+  display: none;
+}

@@ -1,0 +1,14 @@
+<app-list [items]="users">
+    <ng-template let-user>
+        <app-list-item [title]="user.nome">
+            <small>{{ user.email }}</small> | <small>{{ user.username }}</small>
+            <app-button 
+                *ngIf="editar.observed"
+                kind="link" 
+                (click)="onEditarClick(user)"
+            >
+                Editar
+            </app-button>
+        </app-list-item>
+    </ng-template>
+</app-list>

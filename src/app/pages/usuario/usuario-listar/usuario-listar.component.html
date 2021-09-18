@@ -1,0 +1,13 @@
+<app-breadcrumb></app-breadcrumb>
+<app-page-title>
+    <app-button kind="outline" (click)="onAdicionarUsuarioClick()">Adicionar Usuário</app-button>
+</app-page-title>
+<app-usuario-list
+    [users]="users$ | async"
+    (editar)="onEditarUsuarioClick($event)"
+></app-usuario-list>
+<app-list-paginator
+    [(page)]="listRouter.page"
+    [size]="listRouter.size"
+    [maxPages]="listRouter.maxPages"
+></app-list-paginator>

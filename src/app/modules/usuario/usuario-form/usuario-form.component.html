@@ -1,0 +1,70 @@
+<app-form [formGroup]="formulario" (submit)="onFormSubmit()">
+  <div class="container">
+
+    <h3>Dados do usuário</h3>
+    <div class="form">
+      <app-field name="nome" label="Nome">
+        <input name="nome" formControlName="nome" placeholder="Preencha o nome">
+      </app-field>
+
+      <app-field name="genero" label="Gênero">
+        <app-field-checkradio-container>
+          <div><input type="radio" name="genero" formControlName="genero" value="MASCULINO"> Masculino</div>
+          <div><input type="radio" name="genero" formControlName="genero" value="FEMININO"> Feminino</div>
+          <div><input type="radio" name="genero" formControlName="genero" [value]="null"> Não informar</div>
+        </app-field-checkradio-container>
+      </app-field>
+
+      <app-field name="email" label="E-mail">
+        <input name="email" type="email" formControlName="email" placeholder="Preencha o e-mail">
+      </app-field>
+
+      <app-field name="username" label="Login">
+        <input name="username" formControlName="username" placeholder="Preencha o login">
+      </app-field>
+
+      <app-field name="senha" label="Senha" *ngIf="!editar">
+        <input name="senha" formControlName="senha" placeholder="Preencha sua senha" type="password">
+      </app-field>
+
+      <app-field name="confirmarSenha" label="Confirmar senha" *ngIf="!editar">
+        <input name="confirmarSenha" formControlName="confirmarSenha" placeholder="Confirme sua senha" type="password">
+      </app-field>
+
+      <app-field name="termosDeUsoAceito" label="Termos de uso" *ngIf="!editar">
+        <app-field-checkradio-container>
+          <div><input name="termosDeUsoAceito" type="checkbox" formControlName="termosDeUsoAceito"> Concordo com os termos de uso</div>
+        </app-field-checkradio-container>
+      </app-field>
+    </div>
+
+    <h3>Papéis</h3>
+    <div class="form" formArrayName="papeis">
+
+      <app-button kind="outline" (click)="onAddPapel()">Adicionar papel</app-button>
+      <app-validation-error displayErrorOn="always" error="arrayMinLength">Deve possuir um papel</app-validation-error>
+  
+      <app-form 
+        *ngFor="let papelForm of formulario.papeis.controls; let index = index" 
+        [formGroupName]="index" 
+        class="form-array-item"
+        (submit)="onPapelFormSubmit($event)"
+      >
+        <app-field name="busca" label="Descrição" valueControlName="papel">
+          <app-field-group>
+            <input
+              name="busca" 
+              formControlName="busca" 
+              placeholder="Informe a descrição do papel"
+            >
+            <app-button kind="outline" (click)="onRemoverPapel(index)">Remover</app-button>
+          </app-field-group>
+          <app-field-suggestion formControlName="papel" [service]="papelSuggestionService"></app-field-suggestion>
+        </app-field>
+      </app-form>
+  
+    </div>
+  </div>
+
+	<input type="submit" hidden>
+</app-form>

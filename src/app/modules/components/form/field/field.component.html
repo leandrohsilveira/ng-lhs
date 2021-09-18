@@ -1,0 +1,21 @@
+<div 
+  #ref
+  [class]="fieldCssClass"
+  (keydown.arrowdown)="onArrowDownKeydown($event)" 
+  (keydown.arrowup)="onArrayUpKeydown($event)"
+  (keydown.enter)="onEnterKeydown($event)"
+>
+	<label *ngIf="label && name" [for]="name">{{ label }}</label>
+	<ng-content></ng-content>
+  <ng-container *ngIf="isI18nServiceProvided">
+    <app-validation-error *ngIf="shouldDisplayError && errors?.required" error="required">{{ requiredErrorMessage }}</app-validation-error>
+    <app-validation-error *ngIf="shouldDisplayError && errors?.minlength" error="minlength">{{ minLengthErrorMessage }}</app-validation-error>
+    <app-validation-error *ngIf="shouldDisplayError && errors?.maxlength" error="maxlength">{{ maxLengthErrorMessage }}</app-validation-error>
+    <app-validation-error *ngIf="shouldDisplayError && errors?.min" error="min">{{ minNumberErrorMessage }}</app-validation-error>
+    <app-validation-error *ngIf="shouldDisplayError && errors?.max" error="max">{{ maxNumberErrorMessage }}</app-validation-error>
+    <app-validation-error *ngIf="shouldDisplayError && errors?.email" error="email">{{ emailErrorMessage }}</app-validation-error>
+    <ng-container *ngFor="let error of customValidationErrors">
+      <app-validation-error *ngIf="shouldDisplayError" [error]="error.error">{{ error.message }}</app-validation-error>
+    </ng-container>
+  </ng-container>
+</div>
