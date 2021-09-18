@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "✨ ngx-lhs",
+			"path": "."
+		},
+		{
+			"name": "🚀 example",
+			"path": "app/example"
+		},
+		{
+			"name": "📦 @ngx-lhs/components",
+			"path": "packages/components"
+		}
+	],
+	"settings": {}
+}
