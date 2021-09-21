@@ -21,6 +21,7 @@
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ngx-lhs/components": "0.0.0",
     "rxjs": "~7.3.0"
   },
   "devDependencies": {
