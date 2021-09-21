@@ -10,6 +10,7 @@ export class HomeComponent {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
   onUsuariosClick() {
-    this.router.navigate(['usuarios'], {relativeTo: this.activatedRoute})
+    const urls = this.activatedRoute.snapshot.data.urls
+    this.router.navigateByUrl(urls.usuarios)
   }
 }

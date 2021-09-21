@@ -14,8 +14,8 @@ const routes: Routes = [
         pathMatch: 'full',
         loadChildren: lazy(() => import('@app-pages/home'), 'HomeModule'),
         data: {
-          navigator: {
-            usuarios: ['usuarios'],
+          urls: {
+            usuarios: 'usuarios',
           },
         },
       },
