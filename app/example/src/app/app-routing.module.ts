@@ -10,16 +10,22 @@ const routes: Routes = [
     path: '',
     children: [
       {
+        path: '',
+        pathMatch: 'full',
+        loadChildren: lazy(() => import('@app-pages/home'), 'HomeModule'),
+        data: {
+          navigator: {
+            usuarios: ['usuarios'],
+          },
+        },
+      },
+      {
         path: 'usuarios',
         loadChildren: lazy(() => import('./pages/usuario'), 'UsuarioModule'),
         data: {
           title: 'Usuários cadastrados',
           breadcrumb: 'Usuários',
         },
-      },
-      {
-        path: '',
-        loadChildren: lazy(() => import('./pages/home'), 'HomeModule'),
       },
     ],
     data: {

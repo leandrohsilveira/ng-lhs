@@ -5,6 +5,7 @@
   "dependencies": {
     "@ngx-lhs/components": "0.0.0",
     "@app-modules/user": "0.0.0",
+    "@app-pages/home": "0.0.0",
     "@angular/animations": "^12.2.6",
     "@angular/common": "^12.2.6",
     "@angular/compiler": "^12.2.6",

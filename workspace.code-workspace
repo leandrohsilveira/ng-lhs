@@ -1,20 +1,24 @@
 {
   "folders": [
     {
-      "name": "@ngx-lhs",
+      "name": "ngx-lhs",
       "path": "."
     },
     {
-      "name": "🚀 @app/example",
+      "name": "🚀 example",
       "path": "app/example"
     },
     {
-      "name": "🦸‍♂️ @app-modules/user",
+      "name": "✨🦸‍♂️ @app-modules/user",
       "path": "modules/user"
     },
     {
-      "name": "📦 @ngx-lhs/components",
+      "name": "✨📦 @ngx-lhs/components",
       "path": "packages/components"
+    },
+    {
+      "name": "📰🏠 @app-pages/home",
+      "path": "pages/home"
     }
   ],
   "settings": {},
