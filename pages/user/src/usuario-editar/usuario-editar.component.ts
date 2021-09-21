@@ -20,7 +20,7 @@ export class UsuarioEditarComponent implements OnInit {
 
   valido = false
 
-  dados: IUsuarioFormValue
+  dados!: IUsuarioFormValue
 
   ngOnInit() {
     const data = this.activatedRoute.snapshot.data.data ?? 'usuario'

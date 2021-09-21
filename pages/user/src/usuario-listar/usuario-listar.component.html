@@ -5,7 +5,7 @@
   </lhs-button>
 </lhs-page-title>
 <am-usr-usuario-list
-  [users]="users$ | async"
+  [users]="(users$ | async) ?? []"
   (editar)="onEditarUsuarioClick($event)"
 ></am-usr-usuario-list>
 <lhs-list-paginator

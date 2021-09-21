@@ -15,7 +15,7 @@ export class UsuarioListarComponent implements OnInit {
     private activatedRoute: ActivatedRoute
   ) {}
 
-  users$: Observable<IUsuarioListar[]>
+  users$!: Observable<IUsuarioListar[]>
 
   ngOnInit(): void {
     this.users$ = this.listRouter.input$.pipe(

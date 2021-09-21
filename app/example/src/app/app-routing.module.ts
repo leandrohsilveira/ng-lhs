@@ -21,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: 'usuarios',
-        loadChildren: lazy(() => import('./pages/usuario'), 'UsuarioModule'),
+        loadChildren: lazy(() => import('@app-pages/user'), 'UsuarioModule'),
         data: {
           title: 'Usuários cadastrados',
           breadcrumb: 'Usuários',

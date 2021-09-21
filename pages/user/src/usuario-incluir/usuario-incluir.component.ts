@@ -19,7 +19,7 @@ export class UsuarioIncluirComponent {
 
   valido = false
 
-  dados: IUsuarioFormValue
+  dados!: IUsuarioFormValue
 
   onCadastrarClick() {
     this.formService
