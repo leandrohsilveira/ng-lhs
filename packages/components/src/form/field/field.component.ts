@@ -30,7 +30,7 @@ export class FieldComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private fieldService: FieldService,
     @Inject(FIELD_I18N_SERVICE) private i18nService: IFieldI18nService,
-    @Optional() private controlContainer?: ControlContainer,
+    @Optional() private controlContainer?: ControlContainer
   ) {
     this.onFocus = this.onFocus.bind(this)
     this.onBlur = this.onBlur.bind(this)
@@ -65,7 +65,9 @@ export class FieldComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private blur$ = new Subject<void>()
 
-  private ngAfterViewInit$ = new BehaviorSubject<HTMLInputElement[] | undefined>(undefined)
+  private ngAfterViewInit$ = new BehaviorSubject<
+    HTMLInputElement[] | undefined
+  >(undefined)
 
   private ngOnDestroy$ = new Subject()
 
@@ -145,7 +147,7 @@ export class FieldComponent implements OnInit, AfterViewInit, OnDestroy {
     this.fieldService.blur$ = this.blur$.asObservable()
     this.fieldService.ngAfterViewInit$ = this.ngAfterViewInit$.pipe(
       filter((inputs) => inputs !== undefined),
-      map(inputs => inputs as HTMLInputElement[])
+      map((inputs) => inputs as HTMLInputElement[])
     )
     const control = this.valueControl ?? this.formControl
     control?.statusChanges
@@ -195,7 +197,7 @@ export class FieldComponent implements OnInit, AfterViewInit, OnDestroy {
                 return false
               }
               return true
-            })
+            }) as ICustomFieldValidationError[]
         }
       )
   }

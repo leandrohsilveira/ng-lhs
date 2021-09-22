@@ -1,20 +1,16 @@
 {
   "folders": [
     {
-      "name": "ngx-lhs",
-      "path": "."
-    },
-    {
       "name": "🚀 @app/example",
       "path": "app/example"
     },
     {
-      "name": "✨🦸‍♂️ @app-modules/user",
-      "path": "modules/user"
+      "name": "✨🧰 @app-modules/core",
+      "path": "modules/core"
     },
     {
-      "name": "✨📦 @ngx-lhs/components",
-      "path": "packages/components"
+      "name": "✨🦸‍♂️ @app-modules/user",
+      "path": "modules/user"
     },
     {
       "name": "📰🏠 @app-pages/home",
@@ -23,6 +19,14 @@
     {
       "name": "📰🦸‍♂️ @app-pages/user",
       "path": "pages/user"
+    },
+    {
+      "name": "✨📦 @ngx-lhs/components",
+      "path": "packages/components"
+    },
+    {
+      "name": "ngx-lhs",
+      "path": "."
     }
   ],
   "settings": {},

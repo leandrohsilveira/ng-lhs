@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ngx-lhs/components": "0.0.0",
+    "@app-modules/core": "0.0.0",
     "@app-modules/user": "0.0.0",
     "@app-pages/user": "0.0.0",
     "@app-pages/home": "0.0.0",

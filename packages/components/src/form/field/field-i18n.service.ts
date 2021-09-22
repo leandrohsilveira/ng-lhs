@@ -17,9 +17,19 @@ export interface IFieldI18nService {
     props: {requiredLength: number; actualLength: number}
   ): string
 
-  getMinNumberErrorMessage(label: string | undefined, props: {min: number}): string
+  getMinNumberErrorMessage(
+    label: string | undefined,
+    props: {min: number}
+  ): string
 
-  getMaxNumberErrorMessage(label: string | undefined, props: {max: number}): string
+  getMaxNumberErrorMessage(
+    label: string | undefined,
+    props: {max: number}
+  ): string
 
-  getCustomErrorMessage(error: string, label: string | undefined, props: any): string
+  getCustomErrorMessage(
+    error: string,
+    label: string | undefined,
+    props: any
+  ): string | null
 }
