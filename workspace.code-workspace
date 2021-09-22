@@ -5,6 +5,10 @@
       "path": "app/example"
     },
     {
+      "name": "✨📦 @ngx-lhs/components",
+      "path": "packages/components"
+    },
+    {
       "name": "✨🧰 @app-modules/core",
       "path": "modules/core"
     },
@@ -19,10 +23,6 @@
     {
       "name": "📰🦸‍♂️ @app-pages/user",
       "path": "pages/user"
-    },
-    {
-      "name": "✨📦 @ngx-lhs/components",
-      "path": "packages/components"
     },
     {
       "name": "ngx-lhs",

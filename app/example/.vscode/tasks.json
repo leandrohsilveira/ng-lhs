@@ -11,6 +11,17 @@
       "presentation": {
         "group": "dev"
       }
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: build",
+      "detail": "build app example in production mode",
+      "presentation": {
+        "group": "build"
+      }
     }
   ]
 }

@@ -23,8 +23,11 @@
   },
   "scripts": {
     "ng": "ng",
+    "build:app": "npm run build",
+    "build:app:dev": "npm run build:dev",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
+    "build:dev": "ng build",
     "format": "prettier -w .",
     "test": "ng test",
     "lint": "ng lint",

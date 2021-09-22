@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build --watch --configuration development",
+    "build:packages": "npm run build",
+    "build:packages:dev": "npm run build:dev",
+    "build:dev": "ng build --configuration development",
+    "watch": "npm run build:dev -- --watch",
     "prebuild": "rm -Rf dist",
     "build": "ng build",
     "test": "ng test"

@@ -23,6 +23,76 @@
       "problemMatcher": [],
       "label": "lerna: bootstrap",
       "detail": "bootstrap packages and install it's dependencies"
+    },
+    {
+      "type": "npm",
+      "script": "build:packages",
+      "problemMatcher": [],
+      "label": "lerna: build:packages",
+      "detail": "build all packages in production mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:packages:dev",
+      "problemMatcher": [],
+      "label": "lerna: build:packages:dev",
+      "detail": "build all packages in development mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:modules",
+      "problemMatcher": [],
+      "label": "lerna: build:modules",
+      "detail": "build all modules in production mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:modules:dev",
+      "problemMatcher": [],
+      "label": "lerna: build:modules:dev",
+      "detail": "build all modules in development mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:pages",
+      "problemMatcher": [],
+      "label": "lerna: build:pages",
+      "detail": "build all pages in production mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:pages:dev",
+      "problemMatcher": [],
+      "label": "lerna: build:pages:dev",
+      "detail": "build all pages in development mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:app",
+      "problemMatcher": [],
+      "label": "lerna: build:app",
+      "detail": "build all app in production mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:app:dev",
+      "problemMatcher": [],
+      "label": "lerna: build:app:dev",
+      "detail": "build all app in development mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:all",
+      "problemMatcher": [],
+      "label": "lerna: build:all",
+      "detail": "build everything in production mode"
+    },
+    {
+      "type": "npm",
+      "script": "build:all:dev",
+      "problemMatcher": [],
+      "label": "lerna: build:all:dev",
+      "detail": "build everything in development mode"
     }
   ]
 }

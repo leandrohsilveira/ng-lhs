@@ -3,13 +3,35 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "start",
+      "script": "watch",
       "problemMatcher": [],
       "isBackground": true,
-      "label": "npm: start",
-      "detail": "start watch build for module @app-modules/user",
+      "label": "npm: watch",
+      "detail": "start watch build for module @app-modules/user in development mode",
       "presentation": {
         "group": "dev"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "build:dev",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: build:dev",
+      "detail": "build module @app-modules/user in development mode",
+      "presentation": {
+        "group": "dev"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: build",
+      "detail": "build module @app-modules/user in production mode",
+      "presentation": {
+        "group": "build"
       }
     }
   ]

@@ -5,12 +5,17 @@
   "scripts": {
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
-    "lib:components:start": "cd packages/components && npm run start",
-    "lib:components:build": "cd packages/components && npm run build",
-    "module:user:start": "cd modules/user && npm run start",
-    "module:user:build": "cd modules/user && npm run build",
-    "app:example:start": "cd app/example && npm run start",
-    "app:example:build": "cd app/example && npm run build"
+    "build:packages": "lerna run build:packages --stream",
+    "build:packages:dev": "lerna run build:packages:dev --stream",
+    "build:modules": "lerna run build:modules --stream",
+    "build:modules:dev": "lerna run build:modules:dev --stream",
+    "build:pages": "lerna run build:pages --stream",
+    "build:pages:dev": "lerna run build:pages:dev --stream",
+    "build:app": "lerna run build:app --stream",
+    "build:app:dev": "lerna run build:app:dev --stream",
+    "build:all": "npm run build:packages && npm run build:modules && npm run build:pages && npm run build:app",
+    "build:all:dev": "npm run build:packages:dev && npm run build:modules:dev && npm run build:pages:dev && npm run build:app:dev",
+    "start": "lerna run start"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
