@@ -32,7 +32,8 @@
           "options": {
             "main": "./src/test.ts",
             "tsConfig": "./src/tsconfig.spec.json",
-            "karmaConfig": "./karma.conf.js"
+            "karmaConfig": "./karma.conf.js",
+            "preserveSymlinks": true
           }
         }
       }
