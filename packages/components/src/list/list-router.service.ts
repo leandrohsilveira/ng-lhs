@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core'
 import {ActivatedRoute, Data, Params, Router} from '@angular/router'
-import {combineLatest, map, Observable, switchMap} from 'rxjs'
+import {combineLatest, map, Observable} from 'rxjs'
 
 export type RouteInputParams = {
   path: Record<string, string>
@@ -107,7 +107,7 @@ export class ListRouterService {
 
   lastPage() {
     if (this.hasNextPage) {
-      this.page = (this.maxPages ?? 0)
+      this.page = this.maxPages ?? 0
     }
   }
 
