@@ -33,6 +33,17 @@
       "presentation": {
         "group": "build"
       }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: test",
+      "detail": "run tests for library @ngx-lhs/components",
+      "presentation": {
+        "group": "test"
+      }
     }
   ]
 }

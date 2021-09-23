@@ -33,6 +33,17 @@
       "presentation": {
         "group": "build"
       }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: test",
+      "detail": "run tests for module @app-pages/home",
+      "presentation": {
+        "group": "test"
+      }
     }
   ]
 }
