@@ -23,9 +23,12 @@
   },
   "scripts": {
     "ng": "ng",
+    "rm:node_modules": "rm -Rf node_modules",
+    "clean": "rm -Rf dist",
     "build:app": "npm run build",
     "build:app:dev": "npm run build:dev",
     "start": "ng serve",
+    "prebuild": "npm run clean",
     "build": "ng build --configuration production",
     "build:dev": "ng build",
     "format": "prettier -w .",

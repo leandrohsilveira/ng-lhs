@@ -5,6 +5,8 @@
   "scripts": {
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
+    "rm:node_modules": "lerna run rm:node_modules",
+    "clean": "lerna run clean",
     "build:packages": "lerna run build:packages --stream",
     "build:packages:dev": "lerna run build:packages:dev --stream",
     "build:modules": "lerna run build:modules --stream",

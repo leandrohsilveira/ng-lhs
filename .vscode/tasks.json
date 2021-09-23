@@ -93,6 +93,20 @@
       "problemMatcher": [],
       "label": "lerna: build:all:dev",
       "detail": "build everything in development mode"
+    },
+    {
+      "type": "npm",
+      "script": "rm:node_modules",
+      "problemMatcher": [],
+      "label": "lerna: rm:node_modules",
+      "detail": "remove all node_module folders (except root)"
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "problemMatcher": [],
+      "label": "lerna: clean",
+      "detail": "remove all dist folders"
     }
   ]
 }

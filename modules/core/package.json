@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "rm:node_modules": "rm -Rf node_modules",
+    "clean": "rm -Rf dist",
     "build:modules": "npm run build",
     "build:modules:dev": "npm run build:dev",
     "build:dev": "ng build --configuration development",
     "watch": "npm run build:dev -- --watch",
-    "prebuild": "rm -Rf dist",
+    "prebuild": "npm run clean",
     "build": "ng build",
     "test": "ng test"
   },
