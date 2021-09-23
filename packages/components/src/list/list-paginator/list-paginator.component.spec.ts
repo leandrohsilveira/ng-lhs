@@ -1,4 +1,6 @@
+import {CommonModule} from '@angular/common'
 import {ComponentFixture, TestBed} from '@angular/core/testing'
+import {ComponentsModule} from 'components.module'
 
 import {ListPaginatorComponent} from './list-paginator.component'
 
@@ -8,6 +10,7 @@ describe('ListPaginatorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [CommonModule, ComponentsModule],
       declarations: [ListPaginatorComponent],
     }).compileComponents()
   })

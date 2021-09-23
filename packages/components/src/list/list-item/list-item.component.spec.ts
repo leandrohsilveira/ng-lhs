@@ -1,3 +1,4 @@
+import {CommonModule} from '@angular/common'
 import {ComponentFixture, TestBed} from '@angular/core/testing'
 
 import {ListItemComponent} from './list-item.component'
@@ -8,6 +9,7 @@ describe('ListItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [CommonModule],
       declarations: [ListItemComponent],
     }).compileComponents()
   })
