@@ -1,7 +1,7 @@
-import {ButtonComponent, ButtonModule} from 'button'
-import {render, RenderResult} from '@testing-library/angular'
+import {ButtonModule} from 'button'
+import {render} from '@testing-library/angular'
 import {Component} from '@angular/core'
-import {ButtonPO} from 'testing'
+import {ButtonPO} from '@app-testing/components'
 
 @Component({
   template: `

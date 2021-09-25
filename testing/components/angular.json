@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "765a6a61-8b05-438b-b618-0ddfd391d2a3"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@app-modules/core": {
+      "projectType": "library",
+      "root": ".",
+      "sourceRoot": "src",
+      "prefix": "am-test",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "./ng-package.json"
+          },
+          "configurations": {
+            "development": {
+              "tsConfig": "./src/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    }
+  },
+  "defaultProject": "@app-modules/core"
+}

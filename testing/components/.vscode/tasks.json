@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "watch",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: watch",
+      "detail": "start watch build for module @app-testing/components in development mode",
+      "presentation": {
+        "group": "dev"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "build:dev",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "npm: build:dev",
+      "detail": "build module @app-testing/components in development mode",
+      "presentation": {
+        "group": "dev"
+      }
+    }
+  ]
+}

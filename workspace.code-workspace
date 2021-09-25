@@ -25,6 +25,10 @@
       "path": "pages/user"
     },
     {
+      "name": "🩹📦 @app-testing/components",
+      "path": "testing/components"
+    },
+    {
       "name": "ngx-lhs",
       "path": "."
     }

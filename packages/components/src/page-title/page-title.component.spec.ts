@@ -3,7 +3,7 @@ import {Component, Input} from '@angular/core'
 import {ActivatedRoute} from '@angular/router'
 import {fireEvent, render} from '@testing-library/angular'
 import {PageTitleModule} from 'page-title'
-import {PageTitlePO} from 'testing/page-title.po'
+import {PageTitlePO} from '@app-testing/components'
 
 @Component({
   template: `
@@ -68,6 +68,6 @@ describe('PageTitleComponent', () => {
 
     await fireEvent.click(childButton)
 
-    expect(po.component.clicked).toBeTrue()
+    expect(po.host.clicked).toBeTrue()
   })
 })

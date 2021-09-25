@@ -2,8 +2,8 @@ import {RenderResult} from '@testing-library/angular'
 
 export abstract class AbstractPO<Component> {
   constructor(protected result: RenderResult<Component>) {
-    this.component = result.fixture.componentInstance
+    this.host = result.fixture.componentInstance
   }
 
-  component: Component
+  host: Component
 }

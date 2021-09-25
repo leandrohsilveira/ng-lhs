@@ -1,0 +1,36 @@
+{
+  "name": "@app-testing/components",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "rm:node_modules": "rm -Rf node_modules",
+    "clean": "rm -Rf dist",
+    "build:modules:dev": "npm run build:dev",
+    "build:dev": "ng build --configuration development",
+    "watch": "npm run build:dev -- --watch"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "private": true,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.6",
+    "@angular/animations": "~12.2.0",
+    "@angular/cli": "~12.2.6",
+    "@angular/common": "~12.2.0",
+    "@angular/compiler": "~12.2.0",
+    "@angular/compiler-cli": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/platform-browser": "~12.2.0",
+    "@angular/router": "~12.2.0",
+    "@testing-library/angular": "^10.11.0",
+    "@types/node": "^12.11.1",
+    "ng-packagr": "^12.1.1",
+    "rxjs": "~7.3.0",
+    "typescript": "~4.3.5",
+    "zone.js": "~0.11.4"
+  }
+}
