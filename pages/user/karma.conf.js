@@ -30,6 +30,10 @@ module.exports = function (config) {
       subdir: '.',
       reporters: [{type: 'html'}, {type: 'text-summary'}],
     },
+    specReporter: {
+      // maxLogLines: 5,
+      showSpecTiming: true,
+    },
     reporters: ['spec'],
     port: 9876,
     colors: true,

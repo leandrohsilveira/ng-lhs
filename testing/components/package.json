@@ -5,7 +5,7 @@
     "ng": "ng",
     "rm:node_modules": "rm -Rf node_modules",
     "clean": "rm -Rf dist",
-    "build:modules:dev": "npm run build:dev",
+    "build:testing:dev": "npm run build:dev",
     "build:dev": "ng build --configuration development",
     "watch": "npm run build:dev -- --watch"
   },

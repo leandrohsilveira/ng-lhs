@@ -7,6 +7,7 @@
     "bootstrap": "lerna bootstrap",
     "rm:node_modules": "lerna run rm:node_modules",
     "clean": "lerna run clean",
+    "build:testing:dev": "lerna run build:testing:dev --stream",
     "build:packages": "lerna run build:packages --stream",
     "build:packages:dev": "lerna run build:packages:dev --stream",
     "build:modules": "lerna run build:modules --stream",
@@ -16,7 +17,7 @@
     "build:app": "lerna run build:app --stream",
     "build:app:dev": "lerna run build:app:dev --stream",
     "build:all": "npm run build:packages && npm run build:modules && npm run build:pages && npm run build:app",
-    "build:all:dev": "npm run build:packages:dev && npm run build:modules:dev && npm run build:pages:dev && npm run build:app:dev",
+    "build:all:dev": "npm run build:testing:dev && npm run build:packages:dev && npm run build:modules:dev && npm run build:pages:dev && npm run build:app:dev",
     "start": "lerna run start"
   },
   "devDependencies": {
